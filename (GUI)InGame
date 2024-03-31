@@ -1,3 +1,4 @@
+if game.PlaceId = 6839171747 then
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
