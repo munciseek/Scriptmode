@@ -1,0 +1,54 @@
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,2)
+wait(1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to Anzor for Making Devil mod',true,1)
+-- Custom Door Sounds
+loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
+
+local syncConnection; syncConnection = game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+
+-- Hush
+coroutine.wrap(function()
+    while true do
+        wait(math.random(20,350))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(2)
+loadstring(game:HttpGet("https://pastebin.com/raw/vRtJcaHL"))()
+    end
+end)()
+
+-- Strike
+coroutine.wrap(function()
+    while true do
+        wait(math.random(10,150))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.3)
+loadstring(game:HttpGet("https://pastebin.com/raw/JJZnHK71"))()
+    end
+end)()
+
+-- Eater
+coroutine.wrap(function()
+    while true do
+        wait(math.random(100,550))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/NsQ2h877"))()
+    end
+end)()
+
+-- Frost
+coroutine.wrap(function()
+    while true do
+        wait(math.random(5,2100))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/bF2zB5J0"))()
+    end
+end)()
+
+-- Monster
+coroutine.wrap(function()
+    while true do
+        wait(math.random(1,1250))
+        loadstring(game:HttpGet("https://pastebin.com/raw/eK1VmQm0"))()
+    end
+end)()
