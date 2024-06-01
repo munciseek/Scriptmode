@@ -1,0 +1,2 @@
+ -- 国人制作
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Psychotic-mode/main/0.lua"))()
