@@ -1,4 +1,4 @@
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Forgotten mode script succesfully loaded and has been updated (version 2.1) [DISCORD I'D: https://discord.com/invite/8582QySH]",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Forgotten Mode script succesfully loaded (version 2.1) [DISCORD I'D: https://discord.com/invite/h6sdpmAb]",true)
 
 -- custom shop (for current candle model)
 
@@ -59,15 +59,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/gxKdB7VD"))()
 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Script sync'd according started room",true)
-
-wait(3)
-
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("These custom entities almost longest loading now and almost another entities can spawn in number door, sorry for it. Added new entity and custom items (E-200 [WHICH CAN SPAWN IN THE ROOMS 999 DOOR], custom vitamins, purple flashlight [WHICH CAN SPAWN IN 51 DOOR] and shears [WHICH CAN SPAWN IN 101 DOOR])",true)
-
-wait(3)
-
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Anyways, have fun! (Credits by Official_Artemis)",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Script sync'd according started room, have fun! (Credits by Official_Artemis)",true)
 
 -- intro text
 
@@ -219,7 +211,7 @@ coroutine.wrap(function()
  
 while true do
  
-wait(960)
+wait(1290)
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Jahani-john/mayhem-mode/main/mayhemmode-main/ObfuscatedEntities/Blackout-obfuscated.lua'))()
 
@@ -302,7 +294,7 @@ coroutine.wrap(function()
 
 while true do
 
-wait(1500)
+wait(960)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 
 local Reboundcolor = Instance.new("ColorCorrectionEffect",game.Lighting) game.Debris:AddItem(Reboundcolor,24)
@@ -617,7 +609,7 @@ end)()
 
 --
 
--- purple flashlight item (made by Izekai)
+-- purple flashlight item (made by Kotyara19k)
 
 coroutine.wrap(function()
  
@@ -743,7 +735,7 @@ end)
  
 end)()
  
---
+-- https://pastebin.com/raw/Wy7PSxjz
  
 --
  
