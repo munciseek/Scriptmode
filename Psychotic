@@ -1,2 +1,344 @@
- -- 国人制作
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Psychotic-mode/main/0.lua"))()
+local co1 = coroutine.wrap(function()
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.Open.SoundId = "rbxassetid://833871080"
+        workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.Unlock.SoundId = "rbxassetid://833871080"
+        workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.SlamOpen.SoundId = "rbxassetid://833871080"
+        workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.SlamOpen.TimePosition = 0.2
+-- doors
+coroutine.wrap(function()
+    while true do
+        wait(0.0005)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.0005)
+        workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.Open.SoundId = "rbxassetid://833871080"
+        workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.Unlock.SoundId = "rbxassetid://833871080"
+        workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.SlamOpen.SoundId = "rbxassetid://833871080"
+        workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.SlamOpen.TimePosition = 0.2
+    end
+end)()
+
+-- doors 2
+coroutine.wrap(function()
+    while true do
+        wait(0.0005)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.0005)
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Open.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Open.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Open.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Open.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Unlock.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Unlock.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Unlock.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Parts.DoorNormal.Door.Unlock.SoundId = "rbxassetid://833871080"
+    end
+end)()
+end)
+local co2 = coroutine.wrap(function()
+-- Super A60
+coroutine.wrap(function()
+    while true do
+        wait(math.random(1000,1025))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/a60/main/60.lua"))()
+    end
+end)()
+
+-- detph
+coroutine.wrap(function()
+    while true do
+        wait(math.random(890,910))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/detph-spawner/main/detph.lua"))()
+    end
+end)()
+
+-- Crazy Hunger
+coroutine.wrap(function()
+    while true do
+        wait(math.random(900,915))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Crazy-Hunger/main/Hunger.lua"))()
+    end
+end)()
+
+-- terrorist
+coroutine.wrap(function()
+    while true do
+        wait(math.random(999,1000))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Spawn-terrorist/main/Spawn.lua"))()
+    end
+end)()
+
+-- G95
+coroutine.wrap(function()
+    while true do
+        wait(650)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/G95/main/G95.lua"))()
+    end
+end)()
+
+-- Mangle
+coroutine.wrap(function()
+    while true do
+        wait(math.random(790,800))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/M/main/M.lua"))()
+    end
+end)()
+
+-- A200
+coroutine.wrap(function()
+    while true do
+        wait(285)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/A200/main/200.lua"))()
+    end
+end)()
+
+-- Traumatized
+coroutine.wrap(function()
+    while true do
+        wait(650)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Trumanet/main/Traumatizemd.lua"))()
+    end
+end)()
+
+
+-- Decoratebance
+coroutine.wrap(function()
+    while true do
+        wait(math.random(100,200))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Decoratebance-spawn/main/spawn.lua"))()
+    end
+end)()
+
+
+-- Him
+coroutine.wrap(function()
+    while true do
+        wait(math.random(45,100))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Clock/main/Him.lua"))()
+    end
+end)()
+
+-- Insanity Rush
+coroutine.wrap(function()
+    while true do
+        wait(math.random(950,1000))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/Manic%20Rush.lua"))()
+    end
+end)()
+
+-- Mareat
+coroutine.wrap(function()
+    while true do
+        wait(math.random(1000,1100))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Hoangnguyen72628/MayhemMode/main/ObfuscatedEntities/Threat-obfuscated.lua"))()
+    end
+end)()
+
+-- Hard Obsession
+coroutine.wrap(function()
+    while true do
+        wait(math.random(800,900))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/Hard%20Obsession.lua"))()
+    end
+end)()
+
+-- Twiser
+coroutine.wrap(function()
+    while true do
+        wait(math.random(900,1000))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Mayhem-mode-enity/main/enity.lua"))()
+    end
+end)()
+end)
+local co3 = coroutine.wrap(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+local Loading = Instance.new("ScreenGui")
+Loading.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loading.Name = "奔跑"
+
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(0.3, 0, 0.04, 0) -- Reduced height for the stamina bar
+Frame.Position = UDim2.new(0.5, 0, 0.95, 0) -- Positioned at the bottom center
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.Parent = Loading
+
+local frameStroke = Instance.new("UIStroke") -- Renamed to avoid conflict with textBox stroke
+frameStroke.Parent = Frame
+frameStroke.Color = Color3.fromRGB(0, 0, 0)
+frameStroke.Thickness = 4
+
+local Bar = Instance.new("Frame")
+Bar.Size = UDim2.new(1, 0, 1, 0) -- Full size relative to Frame
+Bar.Position = UDim2.new(0, 0, 0, 0)
+Bar.BackgroundColor3 = Color3.fromRGB(0, 166, 255)
+Bar.Parent = Frame
+
+local textBox = Instance.new("TextLabel")
+textBox.Size = UDim2.new(1, 0, 1, 0)
+textBox.Position = UDim2.new(0.5, 0, 0.5, 0)
+textBox.Font = Enum.Font.Oswald
+textBox.AnchorPoint = Vector2.new(0.5, 0.5)
+textBox.TextSize = 40
+textBox.Text = ""
+textBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+textBox.TextTransparency = 0
+textBox.Parent = Bar
+textBox.BackgroundTransparency = 1
+textBox.TextScaled = true
+
+local textStroke = Instance.new("UIStroke") -- Renamed to avoid conflict with Frame stroke
+textStroke.Parent = textBox
+textStroke.Color = Color3.fromRGB(0, 0, 0)
+textStroke.Thickness = 4
+
+local sprintButton = Instance.new("TextButton")
+sprintButton.Size = UDim2.new(0, 145, 0, 135) -- Width 200 pixels, Height 50 pixels
+sprintButton.Position = UDim2.new(1, -2, 1, -2) -- Positioned in the bottom right corner with padding
+sprintButton.AnchorPoint = Vector2.new(1, 1)
+sprintButton.BackgroundColor3 = Color3.fromRGB(0, 166, 255)
+sprintButton.Text = "" -- Text for identification
+sprintButton.Parent = Loading
+
+local NormalWalkSpeed = 16
+local SprintSpeed = 22
+local CameraEffect = true
+local Stamina = 100
+local StaminaDrain = 10
+local StaminaRegen = 5
+
+local cas = game:GetService("ContextActionService")
+local Leftc = Enum.KeyCode.LeftControl
+local RightC = Enum.KeyCode.RightControl
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local Humanoid = char:WaitForChild("Humanoid")
+
+local Camera = game.Workspace.CurrentCamera
+local TweenService = game:GetService("TweenService")
+local UIS = game:GetService("UserInputService")
+
+local StaminaDepleted = false
+
+local function updateStamina()
+    Bar.Size = UDim2.new(Stamina / 100, 0, 1, 0)
+    if Stamina <= 0 and not StaminaDepleted then
+        StaminaDepleted = true
+        require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("You are Exhausted...", true)
+    end
+end
+
+local function startSprint()
+    if Stamina > 0 then
+        if CameraEffect == true then
+            TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 90}):Play()
+        end
+        Humanoid.WalkSpeed = SprintSpeed
+    end
+end
+
+local function stopSprint()
+    if CameraEffect == true then
+        TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 70}):Play()
+    end
+    Humanoid.WalkSpeed = NormalWalkSpeed
+end
+
+local sprinting = false
+
+UIS.InputBegan:Connect(function(key, gameProcessed)
+    if gameProcessed then return end
+    if key.KeyCode == Enum.KeyCode.LeftShift then
+        sprinting = true
+        startSprint()
+    end
+end)
+
+UIS.InputEnded:Connect(function(key, gameProcessed)
+    if gameProcessed then return end
+    if key.KeyCode == Enum.KeyCode.LeftShift then
+        sprinting = false
+        stopSprint()
+    end
+end)
+
+game:GetService("RunService").RenderStepped:Connect(function(deltaTime)
+    if sprinting then
+        if Stamina > 0 then
+            Stamina = Stamina - StaminaDrain * deltaTime
+            if Stamina < 0 then
+                Stamina = 0
+                stopSprint()
+            end
+        end
+    else
+        if Stamina < 100 then
+            Stamina = Stamina + StaminaRegen * deltaTime
+            if Stamina > 100 then
+                Stamina = 100
+            end
+        end
+    end
+    updateStamina()
+end)
+
+sprintButton.MouseButton1Down:Connect(function()
+    sprinting = true
+    startSprint()
+end)
+
+sprintButton.MouseButton1Up:Connect(function()
+    sprinting = false
+    stopSprint()
+end)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+
+local cue2 = Instance.new("Sound")
+	cue2.Parent = game.Workspace
+	cue2.Name = "Sound"
+	cue2.SoundId = "rbxasset://rSCroarove.mp3"
+	cue2.Volume = 2
+	cue2.PlaybackSpeed = 1
+	cue2:Play()
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Psychotic Mode",true)
+wait(3.5)
+
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Make By Darkness and catminetry",true)
+wait(3.5)
+
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Good luck Hacker",true)
+wait(3.5)
+
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Bad Hacker exeute it",
+    Desc = "YOU ARE DIED",
+    Reason = "Crazy mode is exeute",
+    Image = "rbxassetid://12583460254"
+})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Sound/main/Sound.lua"))()
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "script in the hotel. The Mode made by Darkness / catminetry / other person", Color = Color3.fromRGB( 0,255,0 ), Font = nothingactually, FontSize = Enum.FontSize.Size24 } )
+end)
+local co4 = coroutine.wrap(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Jahani-john/mayhem-mode/main/mayhemmode-main/loader.lua'))()
+end)
+
+co1()
+co2()
+co3()
+co4()
