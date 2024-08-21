@@ -1,0 +1,933 @@
+local syncConnection; syncConnection = game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+ 
+ 
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Hell mode Enhanced',true,2)
+wait(2)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Made by tinkgy#8163 (scripter Credits to ice cat Anzor The Jabbis',true,1)
+ 
+spawn(function() -- deergood
+while wait(345) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+
+			-- Create entity
+			local entity = Creator.createEntity({
+				Model = "11393625763",
+				Speed = 25,
+				DelayTime = 0,
+				HeightOffset = 0,
+				CanKill = true,
+				BreakLights = true,
+				FlickerLights = {
+					true,
+					80,
+				},
+				Cycles = {
+					Min = 1,
+					Max = 1,
+					WaitTime = 0.1,
+				},
+				CamShake = {
+					true,
+					{5, 15, 0.1, 1},
+					10,
+				},
+				Jumpscare = {
+					true, -- Enabled ('false' if you don't want jumpscare)
+					{
+						Image1 = "rbxassetid://11394027278", -- Image1 url
+						Image2 = "rbxassetid://11395249153", -- Image2 url
+						Shake = true,
+						Sound1 = {
+							10483790459, -- SoundId
+							{ Volume = 0.5 }, -- Sound properties
+						},
+						Sound2 = {
+							10483837590, -- SoundId
+							{ Volume = 0.5 }, -- Sound properties
+						},
+						Flashing = {
+							true, -- Enabled
+							Color3.fromRGB(48, 25, 52), -- Color
+						},
+						Tease = {
+							false, -- Enabled ('false' if you don't want tease)
+							Min = 1,
+							Max = 1,
+						},
+					},
+				},
+				CustomDialog = {"You died to whom you call The Deer God","Closets Wont work! So try running","Its form is incomprehensible to a human upclose...","..-so avoid Eye Contact" }
+			})
+			local function GetGitSound(GithubSnd,SoundName)
+				local url=GithubSnd
+				if not isfile(SoundName..".mp3") then
+					writefile(SoundName..".mp3", game:HttpGet(url))
+				end
+				local sound=Instance.new("Sound")
+				sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
+				return sound
+			end
+			local Chase = GetGitSound("https://github.com/Noonie1/EntitySpawning/blob/main/Followed..mp3?raw=true","deergodchase")
+			Chase.Parent = workspace
+			Chase.Volume = 4
+			local cameraShaker = require(game.ReplicatedStorage.CameraShaker)
+			local camera = workspace.CurrentCamera
+ 
+			local camShake = cameraShaker.new(Enum.RenderPriority.Camera.Value, function(cf)
+				camera.CFrame = camera.CFrame * cf
+			end)
+			camShake:Start()
+			-----[[ Advanced ]]-----
+			entity.Debug.OnEntitySpawned = function(entity)
+				Chase:Play()
+				game.TweenService:Create(Chase,TweenInfo.new(5),{Volume = 0.7}):Play()
+				camShake:ShakeSustain(cameraShaker.Presets.Earthquake)
+			end
+ 
+			entity.Debug.OnEntityDespawned = function(entity)
+				camShake:StopSustained(5)
+				game.TweenService:Create(Chase,TweenInfo.new(10),{Volume = 0,Pitch = 0}):Play()
+				if getgenv().death == false then
+					getgenv().Title = "Last Chance To Look Away" --Title Here
+					getgenv().Description = "Why are you running?" --Description Here
+					getgenv().Reason = "Survive the rare Entity called Dear God" --Reason Here
+					getgenv().BadgeId = 2129311966  --Replace Number with Your Badge ID
+					getgenv().Category = 10 --You can replace the Category or dont
+ 
+					local Unlock = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Lobby.RemoteListener.Modules.AchievementUnlock)
+					local Achievements = debug.getupvalue(Unlock, 1)
+					for i,v in pairs(require(game:GetService("ReplicatedStorage").Achievements)) do
+						v.Title = getgenv().Title
+						v.Desc = getgenv().Description
+						v.Reason = getgenv().Reason
+						v.BadgeId = getgenv().BadgeId
+						v.Category = getgenv().Category
+					end
+					Unlock(nil,"Join")
+				end
+			end
+ 
+			entity.Debug.OnEntityStartMoving = function(entity)
+ 
+			end
+ 
+			entity.Debug.OnEntityFinishedRebound = function(entity)
+ 
+			end
+ 
+			entity.Debug.OnDeath = function()
+				getgenv().death = true
+			end
+			---------------------------
+ 
+			-- Run the created entity
+			Creator.runEntity(entity)
+			      pcall(deerhoof)
+			end
+end)
+ 
+ 
+ 
+ 
+ 
+spawn(function() -- worten
+while wait(166) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+-- Create entity
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(80),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+ 
+ 
+local entity = Creator.createEntity({
+    CustomName = "Gorten", -- Custom name of your entity
+    Model = "rbxassetid://12358439363", -- Can be GitHub file or rbxassetid
+    Speed = 900, -- Percentage, 100 = default Rush speed
+    DelayTime = 4, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    KillRange = 40,
+    BackwardsMovement = false,
+    FlickerLights = {
+        false, -- Enabled
+        2.5, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 10
+    },
+    CamShake = {
+        true, -- Enabled
+        {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+            Shake = false,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                5567523008, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(6, 38, 135), -- Color
+            },
+            Tease = {
+                false, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+})
+ 
+-----[[ Advanced ]]-----
+entity.Debug.OnEntitySpawned = function(entityModel)
+    print("Entity has spawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityDespawned = function(entityModel)
+    print("Entity has despawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityStartMoving = function(entityModel)
+    print("Entity has started moving:", entityModel)
+end
+ 
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity:", "has entered room:", room)
+end
+ 
+entity.Debug.OnEntityFinishedRebound = function(entityModel)
+    print("Entity finished rebound:", entityModel)
+end
+ 
+entity.Debug.OnDeath = function()
+    warn("You died.")
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Who you call Gorten", "He has a unique sound of leaves, He is fast and quick.", "hide immediately when this happens."}, "Blue")
+end
+ 
+------------------------
+ 
+-- Run the created entity
+Creator.runEntity(entity)
+      pcall(def)
+			end
+end)
+ 
+ 
+ 
+ 
+spawn(function() -- stormy boi
+while wait(213) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+ 
+-- Create entity
+ 
+local entity = Creator.createEntity({
+    CustomName = "Storm", -- Custom name of your entity
+    Model = "rbxassetid://12058478680", -- Can be GitHub file or rbxassetid
+    Speed = 720, -- Percentage, 100 = default Rush speed
+    DelayTime = 5, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    KillRange = 40,
+    BackwardsMovement = false,
+    FlickerLights = {
+        false, -- Enabled
+        2.5, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 2
+    },
+    CamShake = {
+        true, -- Enabled
+        {20, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+            Shake = false,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                5567523008, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(6, 38, 135), -- Color
+            },
+            Tease = {
+                false, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+})
+ 
+-----[[ Advanced ]]-----
+entity.Debug.OnEntitySpawned = function(entityModel)
+    print("Entity has spawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityDespawned = function(entityModel)
+    print("Entity has despawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityStartMoving = function(entityModel)
+    print("Entity has started moving:", entityModel)
+end
+ 
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity:", "has entered room:", room)
+end
+ 
+entity.Debug.OnEntityFinishedRebound = function(entityModel)
+    print("Entity finished rebound:", entityModel)
+end
+ 
+entity.Debug.OnDeath = function()
+    warn("You died.")
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Storm", "He makes a very glitchy sound, He is fast like gorten.", "hide immediately when this happens."}, "Blue")
+end
+ 
+------------------------
+ 
+-- Run the created entity
+Creator.runEntity(entity)
+      pcall(e)
+			end
+end)
+ 
+ 
+ 
+spawn(function() -- vassault
+while wait(320) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(69, 69, 69)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(80),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+ 
+-- Create entity
+ 
+local entity = Creator.createEntity({
+    CustomName = "Vassault", -- Custom name of your entity
+    Model = "rbxassetid://11871548416", -- Can be GitHub file or rbxassetid
+    Speed = 300, -- Percentage, 100 = default Rush speed
+    DelayTime = 4, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    KillRange = 40,
+    BackwardsMovement = false,
+    FlickerLights = {
+        false, -- Enabled
+        2.5, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1
+    },
+    CamShake = {
+        true, -- Enabled
+        {4, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+            Shake = false,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                5567523008, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(6, 38, 135), -- Color
+            },
+            Tease = {
+                false, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+})
+ 
+-----[[ Advanced ]]-----
+entity.Debug.OnEntitySpawned = function(entityModel)
+    print("Entity has spawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityDespawned = function(entityModel)
+    print("Entity has despawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityStartMoving = function(entityModel)
+    print("Entity has started moving:", entityModel)
+end
+ 
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity:", "has entered room:", room)
+end
+ 
+entity.Debug.OnEntityFinishedRebound = function(entityModel)
+    print("Entity finished rebound:", entityModel)
+end
+ 
+entity.Debug.OnDeath = function()
+    warn("You died.")
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Vassult ", "He Does not make sound so be sure on look, He gives a hint he comes if a scream happens.", "hide when this happens!"}, "Blue")
+end
+ 
+------------------------
+ 
+-- Run the created entity
+Creator.runEntity(entity)
+      pcall(vassualt)
+			end
+end)
+ 
+ 
+ 
+ 
+spawn(function() -- lock
+while wait(199) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+ 
+-- Create entity
+ 
+local entity = Creator.createEntity({
+    CustomName = "Lock", -- Custom name of your entity
+    Model = "rbxassetid://12563928391", -- Can be GitHub file or rbxassetid
+    Speed = 100000000, -- Percentage, 100 = default Rush speed
+    DelayTime = 4, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    KillRange = 40,
+    BackwardsMovement = false,
+    FlickerLights = {
+        false, -- Enabled
+        2.5, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 4
+    },
+    CamShake = {
+        true, -- Enabled
+        {4, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+            Shake = false,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                5567523008, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(6, 38, 135), -- Color
+            },
+            Tease = {
+                false, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+})
+ 
+-----[[ Advanced ]]-----
+entity.Debug.OnEntitySpawned = function(entityModel)
+    print("Entity has spawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityDespawned = function(entityModel)
+    print("Entity has despawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityStartMoving = function(entityModel)
+    print("Entity has started moving:", entityModel)
+end
+ 
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity:", "has entered room:", room)
+end
+ 
+entity.Debug.OnEntityFinishedRebound = function(entityModel)
+    print("Entity finished rebound:", entityModel)
+end
+ 
+entity.Debug.OnDeath = function()
+    warn("You died.")
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Lock ", "He is also fast, if a big wave sound happens hide quickly.", "his speed is unfathomable"}, "Blue")
+end
+ 
+------------------------
+ 
+-- Run the created entity
+Creator.runEntity(entity)
+      pcall(lock)
+			end
+end)
+ 
+ 
+ 
+ 
+ 
+spawn(function() -- Trip 
+while wait(110) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+ 
+-- Create entity
+ 
+local entity = Creator.createEntity({
+    CustomName = "Trip", -- Custom name of your entity
+    Model = "rbxassetid://12473612190", -- Can be GitHub file or rbxassetid
+    Speed = 200, -- Percentage, 100 = default Rush speed
+    DelayTime = 4, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    KillRange = 40,
+    BackwardsMovement = false,
+    FlickerLights = {
+        false, -- Enabled
+        2.5, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 4
+    },
+    CamShake = {
+        true, -- Enabled
+        {4, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+            Shake = false,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                5567523008, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(6, 38, 135), -- Color
+            },
+            Tease = {
+                false, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+})
+ 
+-----[[ Advanced ]]-----
+entity.Debug.OnEntitySpawned = function(entityModel)
+    print("Entity has spawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityDespawned = function(entityModel)
+    print("Entity has despawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityStartMoving = function(entityModel)
+    print("Entity has started moving:", entityModel)
+end
+ 
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity:", "has entered room:", room)
+end
+ 
+entity.Debug.OnEntityFinishedRebound = function(entityModel)
+    print("Entity finished rebound:", entityModel)
+end
+ 
+entity.Debug.OnDeath = function()
+    warn("You died.")
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Lock ", "He is also fast, if a big wave sound happens hide quickly.", "his speed is unfathomable"}, "Blue")
+end
+ 
+------------------------
+ 
+-- Run the created entity
+Creator.runEntity(entity)
+      pcall(lock)
+			end
+end)
+ 
+ 
+ 
+ 
+ 
+spawn(function() -- Trip 
+while wait(110) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+ 
+-- Create entity
+ 
+local entity = Creator.createEntity({
+    CustomName = "Trip", -- Custom name of your entity
+    Model = "rbxassetid://12473612190", -- Can be GitHub file or rbxassetid
+    Speed = 200, -- Percentage, 100 = default Rush speed
+    DelayTime = 4, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    BreakLights = true,
+    KillRange = 40,
+    BackwardsMovement = false,
+    FlickerLights = {
+        true, -- Enabled
+        2.5, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1
+    },
+    CamShake = {
+        true, -- Enabled
+        {4, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled ('false' if you don't want jumpscare)
+        {
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+            Shake = false,
+            Sound1 = {
+                0, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                5567523008, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled
+                Color3.fromRGB(6, 38, 135), -- Color
+            },
+            Tease = {
+                false, -- Enabled ('false' if you don't want tease)
+                Min = 1,
+                Max = 3,
+            },
+        },
+    },
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+})
+ 
+-----[[ Advanced ]]-----
+entity.Debug.OnEntitySpawned = function(entityModel)
+    print("Entity has spawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityDespawned = function(entityModel)
+    print("Entity has despawned:", entityModel)
+end
+ 
+entity.Debug.OnEntityStartMoving = function(entityModel)
+    print("Entity has started moving:", entityModel)
+end
+ 
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity:", "has entered room:", room)
+end
+ 
+entity.Debug.OnEntityFinishedRebound = function(entityModel)
+    print("Entity finished rebound:", entityModel)
+end
+ 
+entity.Debug.OnDeath = function()
+    warn("You died.")
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Trip ", "He has a very loud scream, that scream can alert you he spawned.", "hide when this happens!"}, "Blue")
+end
+ 
+------------------------
+ 
+-- Run the created entity
+Creator.runEntity(entity)
+      pcall(Trip)
+			end
+end)
+ 
+ 
+ 
+ 
+ 
+spawn(function() -- stare
+while wait(121) do
+if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+ 
+-- Create entity
+ 
+ 
+local entity = Creator.createEntity({
+    CustomName = "Stare", -- Custom name of your entity
+    Model = "rbxassetid://11347853954", -- Can be GitHub file or rbxassetid
+    Speed = 0, -- Percentage, 100 = default Rush speed
+    DelayTime = 0, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = false,
+    KillRange = 50,
+    BreakLights = false,
+    BackwardsMovement = false,
+    FlickerLights = {
+        false, -- Enabled/Disabled
+        5, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true, -- Enabled/Disabled
+        {4.5, 24, 0.1, 1}, -- Shake values (don't change if you don't know)
+        50, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        false, -- Enabled/Disabled
+        {
+            Image1 = "rbxassetid://11278229112", -- Image1 url
+            Image2 = "rbxassetid://11278229112", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                9116390056, -- SoundId
+                { Volume = 1 }, -- Sound properties
+            },
+            Sound2 = {
+                5029269312, -- SoundId
+                { Volume = 1 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled/Disabled
+                Color3.fromRGB(125, 249, 255), -- Color
+            },
+            Tease = {
+                true, -- Enabled/Disabled
+                Min = 1.5,
+                Max = 1,
+            },
+        },
+    },
+    CustomDialog = {"You died to who you call Depth.", "if you hear swirling hide", "Remember that Depth sometimes waits for you"}, -- Custom death message
+})
+ 
+-----[[ Advanced ]]-----
+entity.Debug.OnEntitySpawned = function(entityTable)
+    print("Entity has spawned:", entityTable.Model)
+end
+ 
+entity.Debug.OnEntityDespawned = function(entityTable)
+    print("Entity has despawned:", entityTable.Model)
+end
+ 
+entity.Debug.OnEntityStartMoving = function(entityTable)
+    print("Entity has started moving:", entityTable.Model)
+end
+ 
+entity.Debug.OnEntityFinishedRebound = function(entityTable)
+    print("Entity has finished rebound:", entityTable.Model)
+end
+ 
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity:", entityTable.Model, "has entered room:", room)
+end
+ 
+entity.Debug.OnLookAtEntity = function(entityTable)
+    print("Player has looked at entity:", entityTable.Model)
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+ 
+entity.Debug.OnDeath = function(entityTable)
+    warn("Player has died.")
+            firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to whom you call Firebrand", "he is fast and has a potential of slaying you.", "hide when this happens!."}, "Blue")
+end
+------------------------
+ 
+-- Run the created entity
+Creator.runEntity(entity)
+      pcall(Stare)
+			end
+end)
+ 
+spawn(function()
+		while wait(math.random(6,100)) do
+		require(game.StarterGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech)(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
+workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
+            pcall(Screech)
+         end
+end)
+ 
+ 
+-- goofy ahh endless doors death music
+coroutine.wrap(function()
+    while true do
+        wait(0.0005)
+game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+        a.Blue.Volume = 7
+        a.Blue.End.Volume = 7
+    end
+end)()
+
+wait(255)
+loadstring(game:HttpGet("https://pastebin.com/raw/uXY1EAxZ"))()
