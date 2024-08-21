@@ -1,0 +1,35 @@
+--Screech, Jessica, TheEndIsNear, C87FM, Vynixu, Nexus
+--Creator of Endless Doors: Zavaled
+--Your game might crash when you get an achievement
+--seekeye.lua could lag your game, remove seekeye.lua to not lag during seek chase
+--Victrola has a copyrighted song, remove VictrolaRecreation.txt to avoid copyright claims
+--Join the Discord for Updates and Sneak peeks: https://discord.gg/mCaKjUeh7f
+
+if game:GetService("ReplicatedStorage"):FindFirstChild("Endless") then
+
+    firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You already executed this mod, Returning',true,1)
+
+    return false
+
+end
+
+local Test = Instance.new("Part")
+
+Test.Name = "Endless"
+
+Test.Parent = game:GetService("ReplicatedStorage")
+
+Test = 1
+game.SoundService.AmbientReverb = "City"
+game.Lighting.Ambience_Seek2.Enabled = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/Sprinting.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/FlashlightItemV3.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/Script.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/ScriptMultiplayer.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/seekeye.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/seekmodel.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/VictrolaRecreation.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/MusicReplace.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/FUCKOFFBLINK.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/GuidingLight/main/GuideLight.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/Credits%20Dont%20Remove.txt"))()
