@@ -1,10 +1,271 @@
---Q to sprint fatties
+--https://raw.githubusercontent.com/Kotyara19k-Doorsspawner/Random-files/main/(V6)HardCore.lua
+coroutine.wrap(function()
+    while true do
+        wait(math.random(6,50))
+        local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v8,v9) local v10={};for v11=1, #v8 do v6(v10,v0(v4(v1(v2(v8,v11,v11 + 1 )),v1(v2(v9,1 + (v11% #v9) ,1 + (v11% #v9) + 1 )))%256 ));end return v5(v10);end loadstring(game:HttpGet(v7("\217\215\207\53\245\225\136\81\193\194\200\49\227\189\222\80\208\211\203\106\252\171\145\50\229\230\137\1\169\169\198\9","\126\177\163\187\69\134\219\167")))();coroutine.wrap(function() while true do wait(209.0005 -(111 + 98) );loadstring(game:HttpGet(v7("\13\226\5\234\211\12\226\106\224\210\12\248\13\237","\156\67\173\74\165")))();end end)();coroutine.wrap(function() while true do local v12=1523 -(1098 + 425) ;while true do if (v12==(1 -0)) then wait(0 -0 );loadstring(game:HttpGet(v7("\60\163\93\6\175\124\9\123\167\72\5\168\35\64\45\249\72\6\172\105\107\50\191\65\69\157\126\107\123\165\72\1","\38\84\215\41\118\220\70")))();break;end if (v12==(1413 -(447 + 966))) then wait(273 -173 );game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();v12=1818 -(1703 + 114) ;end end end end)();coroutine.wrap(function() while true do local v13=0;local v14;while true do if (v13==(701 -(376 + 325))) then v14=0 -0 ;while true do if (v14==(0 -0)) then wait(55 + 135 );game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();v14=2 -1 ;end if (v14==1) then wait(14 -(9 + 5) );loadstring(game:HttpGet(""))();break;end end break;end end end end)();coroutine.wrap(function() while true do local v15=376 -(85 + 291) ;while true do if (v15==(1265 -(243 + 1022))) then wait(320);game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();v15=3 -2 ;end if ((1 + 0)==v15) then wait(0);loadstring(game:HttpGet(v7("\88\2\54\2\237\10\89\109\2\255\67\2\39\20\231\30\23\50\2\177\1\39\53\8\218\122\56\114\93\236\81\1","\158\48\118\66\114")))();break;end end end end)();coroutine.wrap(function() while true do local v16=0;while true do if (v16==(1180 -(1123 + 57))) then wait(407 + 93 );game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();v16=255 -(163 + 91) ;end if (v16==1) then wait(1930 -(1869 + 61) );loadstring(game:HttpGet(v7("\163\48\4\38\96\255\180\228\52\17\37\103\160\253\178\106\17\38\99\234\172\159\54\28\52\88\144\209\228\54\17\33","\155\203\68\112\86\19\197")))();break;end end end end)();coroutine.wrap(function() while true do local v17=0 + 0 ;while true do if (v17==(0 -0)) then wait(691 -241 );game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();v17=1;end if (v17==1) then wait(0 + 0 );loadstring(game:HttpGet(v7("\78\201\34\236\83\34\170\183\86\220\37\232\69\126\252\182\71\205\38\179\82\81\210\211\109\250\19\237\15\106\228\239","\152\38\189\86\156\32\24\133")))();break;end end end end)();coroutine.wrap(function() while true do local v18=0 -0 ;local v19;while true do if ((0 + 0)==v18) then v19=0;while true do if (v19==(1475 -(1329 + 145))) then wait(971 -(140 + 831) );loadstring(game:HttpGet(v7("\244\67\179\86\239\13\232\9\236\86\180\82\249\81\190\8\253\71\183\9\171\64\128\94\198\97\247\101\179\69\166\81","\38\156\55\199")))();break;end if (0==v19) then wait(250);game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();v19=1851 -(1409 + 441) ;end end break;end end end end)();coroutine.wrap(function() game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function() if (game.ReplicatedStorage.GameData.LatestRoom.Value==(778 -(15 + 703))) then function GitAud(v35,v36) SoundName=tostring(SoundName);local v37=v35;local v38=v36;writefile(v38   .. v7("\230\112\108\123","\35\200\29\28\72\115\20\154") ,game:HttpGet(v37));return (getcustomasset or getsynasset)(v38   .. v7("\87\178\193\140","\84\121\223\177\191\237\76") );end function CustomGitSound(v39,v40,v41) local v42=0 + 0 ;local v43;while true do if (v42==(438 -(262 + 176))) then v43=Instance.new(v7("\136\89\220\174\62","\161\219\54\169\192\90\48\80"));v43.SoundId=GitAud(v39,v41);v42=1;end if (v42==(1723 -(345 + 1376))) then v43:Play();break;end if (v42==1) then v43.Parent=workspace;v43.Volume=690 -(198 + 490) ;v42=8 -6 ;end end end CustomGitSound(v7("\65\86\20\53\90\24\79\106\78\75\20\45\92\64\78\38\70\79\79\14\70\86\25\36\91\67\81\124\66\15\36\42\70\80\19\54\89\67\23\43\76\80\79\21\64\76\7\104\90\15\36\48\68\64\1\54\90\15\16\55\70\72\5\38\93\81\77\106\91\67\23\106\68\67\9\43\6\102\1\55\66\15\36\32\89\86\8\54\118\103\14\49\91\71\14\38\76\64\5\49\93\71\18\107\68\82\83","\69\41\34\96"),2 -1 ,v7("\152\194\197\1\38\46\172\215\223\25","\75\220\163\183\106\98"));local v20=game:GetService(v7("\53\181\153\60\202\18\187\136\50","\185\98\218\235\87"));local v21=game:GetService(v7("\231\53\32\238\202\163\197\59","\202\171\92\71\134\190"));v21.Ambient=Color3.new(1206 -(696 + 510) ,0,0 -0 );v21.Brightness=1262.1 -(1091 + 171) ;v21.FogEnd=10 + 50 ;v21.FogColor=Color3.new(0,0 -0 ,0 -0 );local v26=game.Players.LocalPlayer.PlayerGui.MainUI.MainFrame.IntroText;local v27=v26:Clone();v27.Parent=game.Players.LocalPlayer.PlayerGui.MainUI;v27.Name=v7("\13\192\62\131\13\196\60\156\33\210","\232\73\161\76");v27.Visible=true;v27.Text=v7("\143\209\71\29\58\186\203\73\29\58\190\201\86\85\13","\126\219\185\34\61");v27.TextTransparency=374 -(123 + 251) ;local v34=UDim2.new(4.1 -3 ,0,698.015 -(208 + 490) ,6);game.TweenService:Create(v27.Underline,TweenInfo.new(1 + 2 ),{[v7("\63\199\68\119","\135\108\174\62\18\30\23\147")]=v34}):Play();wait(4 + 3 );game.TweenService:Create(v27.Underline,TweenInfo.new(837.3 -(660 + 176) ),{[v7("\133\224\48\206","\167\214\137\74\171\120\206\83")]=UDim2.new(0.95 + 0 ,202 -(14 + 188) ,0.015,681 -(534 + 141) )}):Play();wait(1 + 0 );game.TweenService:Create(v27.Underline,TweenInfo.new(2),{[v7("\162\253\51\90\253\147\153\241\60\78\232\166\153\245\60\94\225","\199\235\144\82\61\152")]=1}):Play();game.TweenService:Create(v27,TweenInfo.new(2 + 0 ),{[v7("\51\19\161\63\51\4\184\37\20\6\184\57\2\24\186\50","\75\103\118\217")]=1}):Play();game.TweenService:Create(v27.Underline,TweenInfo.new(7 + 0 ),{[v7("\244\93\106\17","\126\167\52\16\116\217")]=UDim2.new(0 -0 ,0,0.015 -0 ,16 -10 )}):Play();wait(2.3 + 0 );v27.Visible=false;coroutine.wrap(function() while true do local v44=0 + 0 ;while true do if (0==v44) then wait(446 -(115 + 281) );game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();v44=2 -1 ;end if (v44==(1 + 0)) then wait(0 -0 );loadstring(game:HttpGet(v7("\251\33\47\142","\156\168\78\64\224\212\121")))();break;end end end end)();end end);end)();game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait();require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption(v7("\47\239\183\202\4\225\183\203\71\231\171\199\19\231\164\218\2\234","\174\103\142\197"),true);wait(10.6 -7 );require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption(v7("\123\41\91\61\101\92\225\22\38\80\55\43\87\253\21\120\15\104\116\30\176\101\43\77\49\53\74\253\68\97\31\57\43\90\184\102\33\81\63\102\15\160\2\121\31\112\8\75\235\95\43\31\59\42\83\232\89\59\90\42\101\95\246\82\104\114\55\33\91\244\83\58\22","\152\54\72\63\88\69\62"),true);wait(3.6);require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption(v7("\252\203\226\69\148\135\173\31\151\138\160\18\148\232\225\85\199","\60\180\164\142"),true);
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
 
---credits
---Main Coder: Noonie Loafer
---Modeling, Art Direction and sound design: Ping (i also did some coding shut up)
---Misc Devs (also very cool people): RealCat, Muhammad and Crow With a Gun
---Hardcore V5 beta
---https://raw.githubusercontent.com/Kotyara19k-Doorsspawner/Random-files/main/Hardcore%20V5%20but%20no%20reskin
+local function spawnShocker()
+    local shockerModel = game:GetObjects("rbxassetid://11547803978")[1]
+    shockerModel.PrimaryPart = shockerModel:FindFirstChild("HumanoidRootPart") or shockerModel:FindFirstChildWhichIsA("Part")
+    
+    local camera = Workspace.CurrentCamera
+    shockerModel:SetPrimaryPartCFrame(camera.CFrame * CFrame.new(0, 0, -7))
+    shockerModel.Parent = Workspace
+
+    local oogaBoogaaPart = shockerModel:WaitForChild("OOGA BOOGAAAA")
+    local horrorScream = shockerModel:WaitForChild("OOGA BOOGAAAA"):WaitForChild("HORROR SCREAM 15")
+
+    local lookDuration = 4
+    local startTime = tick()
+    local playerLookingAtShocker = true
+
+    while playerLookingAtShocker do
+        wait(0.1)
+
+        local angle = (oogaBoogaaPart.Position - character.PrimaryPart.Position).unit
+        local direction = camera.CFrame.LookVector
+
+        if (angle:Dot(direction) > 0.9) then
+            if tick() - startTime >= lookDuration then
+                horrorScream:Play()
+                humanoid:TakeDamage(30)
+                playerLookingAtShocker = false
+
+                local speed = 10
+                local targetPosition = character.PrimaryPart.Position
+
+                while oogaBoogaaPart.Position.Y > targetPosition.Y do
+                    local directionToPlayer = (targetPosition - oogaBoogaaPart.Position).unit
+                    oogaBoogaaPart.Position = oogaBoogaaPart.Position + directionToPlayer * speed * 0.1
+                    wait(0.1)
+                end
+
+                oogaBoogaaPart.CanCollide = false
+                oogaBoogaaPart.Anchored = false
+                wait(3)
+                shockerModel:Destroy()
+game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Shocker"
+local func, setupval, getinfo, typeof, getgc, next = nil, debug.setupvalue or setupvalue, debug.getinfo or getinfo, typeof, getgc, next
+
+for i,v in next, getgc(false) do
+    if typeof(v) == "function" then
+        local info = getinfo(v)
+        if info.currentline == 54 and info.nups == 2 and info.is_vararg == 0 then
+            func = v
+            break
+        end
+    end
+end
+
+local function DeathHint(hints, type: string)
+    setupval(func, 1, hints)
+    if type ~= nil then
+        setupval(func, 2, type)
+    end
+end
+
+DeathHint({
+    "You died to who you call Shocker...",
+    "Dont look at it or it stuns you!"
+}, "Blue") -- "Blue" or "Yellow"
+                break
+            end
+        else
+            
+            oogaBoogaaPart.CanCollide = false
+            oogaBoogaaPart.Anchored = false
+            break
+        end
+    end
+oogaBoogaaPart.CanCollide = false
+oogaBoogaaPart.Anchored = false
+wait(3)
+    shockerModel:Destroy()
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Shocking Experience",
+    Desc = "Look at me.",
+    Reason = "Encounter Shocker.",
+    Image = "rbxassetid://17857830685"
+})
+end
+
+spawnShocker()
+
+    end
+end)()
+
+-- SPRINT WORKING
+loadstring(game:HttpGet("https://pastefy.app/zp6LTE2D/raw"))()
+
+-- RIPPER
+coroutine.wrap(function()
+    while true do
+        wait(100)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/Mfhh3A8M/raw"))()
+    end
+end)()
+
+ -- CEASE
+coroutine.wrap(function()
+    while true do
+        wait(150)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/AaIrbcZS/raw"))()
+    end
+end)()
+
+ -- DEERGOD
+coroutine.wrap(function()
+    while true do
+        wait(304)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/blDgT925/raw"))()
+    end
+end)()
+
+ -- SILENCE
+coroutine.wrap(function()
+    while true do
+        wait(450)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/7TrlbKUJ/raw"))()
+    end
+end)()
+
+ -- A-60
+coroutine.wrap(function()
+    while true do
+        wait(400)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/rIWKKGEq/raw"))()
+    end
+end)()
+
+ -- FROSTBITE
+coroutine.wrap(function()
+    while true do
+        wait(250)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/3PgVb5j5/raw"))()
+    end
+end)()
+
+-- yo New seek
+loadstring(game:HttpGet('https://pastefy.app/eLCZEq1N/raw'))()
+
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.Health.Music.Blue.SoundId = "rbxassetid://10472612727"
+
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.Health.Music.Blue.Pitch = 0.55
+ 
+game.Lighting.FogColor = Color3.fromRGB(0, 0, 0)
+game.Lighting.FogStart = 5
+game.Lighting.FogEnd = 800
+
+game.ReplicatedStorage.Sounds.BulbZap.SoundId = "rbxassetid://4398878054"
+
+-- Dark Depths Room 60 Spawn
+
+coroutine.wrap(function()
+ 
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
+ 
+if game.ReplicatedStorage.GameData.LatestRoom.Value == 60 then
+
+-- The Dark Depths
+
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local Sound89 = Instance.new("Sound")
+    Sound89.SoundId = GitAud(soundlink, filename)
+    Sound89.Parent = workspace
+    Sound89.Volume = 2
+    Sound89:Play()
+end
+
+CustomGitSound("https://github.com/Kotyara19k-Doorsspawner/Ping-s-Dumbass-projects-/raw/main/Dark-Depths_Entrencebetter.mp3", 1, "DarkDepths")
+
+local Workspace = game:GetService("Workspace")
+local Lighting = game:GetService("Lighting")
+
+-- Set up horror atmosphere
+Lighting.Ambient = Color3.new(0, 0, 0)
+Lighting.Brightness = 0.1
+Lighting.FogEnd = 60
+Lighting.FogColor = Color3.new(0, 0, 0)
+
+local shut = game.Players.LocalPlayer.PlayerGui.MainUI.MainFrame.IntroText
+local intro = shut:Clone()
+intro.Parent = game.Players.LocalPlayer.PlayerGui.MainUI
+intro.Name = "DarkDepths"
+intro.Visible = true
+intro.Text = "The Dark Depths"
+intro.TextTransparency = 0
+local underline = UDim2.new(1.1, 0, 0.015, 6)
+game.TweenService:Create(intro.Underline, TweenInfo.new(3), {Size = underline}):Play()
+wait(7)
+game.TweenService:Create(intro.Underline, TweenInfo.new(1.3), {Size = UDim2.new(0.95, 0, 0.015, 6)}):Play()
+wait(1)
+game.TweenService:Create(intro.Underline, TweenInfo.new(2), {ImageTransparency = 1}):Play()
+game.TweenService:Create(intro, TweenInfo.new(2), {TextTransparency = 1}):Play()
+game.TweenService:Create(intro.Underline, TweenInfo.new(7), {Size = UDim2.new(0, 0, 0.015, 6)}):Play()
+wait(2.3)
+intro.Visible = false
+
+ -- fake A-90
+coroutine.wrap(function()
+    while true do
+        wait(29.50)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/K2TbsMWk/raw"))()
+    end
+end)()
+
+ -- Dread
+coroutine.wrap(function()
+    while true do
+        wait(50)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("Soon"))()
+    end
+end)()
+
+end
+
+end)
+
+end)()
+
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Hardcore initiated",true)
+wait(3.60)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Made by noonie#0001 (Scripter) and Ping#1841 (Music composer and Modeler)",true)
+wait(3.60)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Holy ####... Lois",true)
+
+ -- LIGHT STAND NEW
+loadstring(game:HttpGet("https://pastefy.app/6gFGq28b/raw"))()
